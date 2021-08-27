@@ -1,0 +1,87 @@
+.row {
+  margin-bottom: 15px;
+}
+.image{
+  position: relative;
+}
+.row > div {
+  /*border: 2px solid red;*/
+  background-color: white;
+}
+.username{
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: 300px;
+}
+.password{
+   height: 50px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: absolute;
+  top: 110px;
+  right: 300px; 
+}
+.confirm_password{
+   height: 50px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: absolute;
+  top: 280px;
+  right: 160px; 
+}
+.email{
+   height: 50px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  position: absolute;
+  top: 330px;
+  right: 160px; 
+}
+.login {
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+  text-align: center;
+  /*display: inline-block;*/
+  position: absolute;
+  top: 250px;
+  right: 400px;
+}
+.signup {
+  height: 80px;
+  width: 80px;
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+  text-align: center;
+  /*display: inline-block;*/
+  position: absolute;
+  top: 450px;
+  right: 160px;
+}
+
+.login:hover{
+	color: orange;
+	text-align: center;
+    top: 255px;
+  right: 400px;
+}
+.signup:hover{
+  color: orange;
+  text-align: center;
+  top: 455px;
+  right: 160px;
+}
