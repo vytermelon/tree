@@ -4,50 +4,29 @@
 	<title>PlaceHolder</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./bootstrap.min.css">
-  <link rel="stylesheet" href="./styles.css">
-  <script type="text/javascript" src="./Home.js"></script>
+	<link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/styles.css">
 </head>
 
-<body class="body">
-  <div class="centre">
-  <img src="background1.jpg" alt="3v3">
+<body>
+
+  <form action="insert.php" method="POST">
+  <div class="image">
+  <img src="background.jpg" alt="background">
   </div>
-   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-6 "><p class="Enter">Enter Teams</p><br>
-        <input type="text" placeholder="Team1" name="Team1" class="name" required>
-        <input type="text" placeholder="Team2" name="Team2" class="name" required>
-        <input type="text" placeholder="Team1" name="Team1" class="name" required>
-        <input type="text" placeholder="Team2" name="Team2" class="name" required>
-        <input type="text" placeholder="Team1" name="Team1" class="name" required>
-        <input type="text" placeholder="Team2" name="Team2" class="name" required>
-        <br><br>
-        <button class="Fixture" onclick="make_fixtures(document.getElementsByName('Team1'),document.getElementsByName('Team2'))" type="submit" name="Fixture">Make Fixtures</button>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-6 fixtures"><p class = "Enter">Fixtures</p><br>
-        <label for="Fixture1" id="Fixture1">Fixture1</label><br>
-        <label for="Fixture2" id="Fixture2">Fixture2</label><br>
-        <label for="Fixture3" id="Fixture3">Fixture3</label><br>
-        <label for="Fixture4" id="Fixture4">Fixture4</label><br>
-        <label for="Fixture5" id="Fixture5">Fixture5</label><br>
-        <label for="Fixture6" id="Fixture6">Fixture6</label><br>
-        <label for="Fixture7" id="Fixture7">Fixture7</label><br>
-        <label for="Fixture8" id="Fixture8">Fixture8</label><br>
-        <label for="Fixture9" id="Fixture9">Fixture9</label><br>
-        <button class="Update" onclick="update_results(document.getElementsByName('Score1'),document.getElementsByName('Score2'))" type="submit" name="Update">Update</button>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-6"><p class="Enter">Results</p><br>
-        <label for="Team1" class="Results">Team1</label>
-        <label for="Team2" class="Results">Team2</label><br>
-        <label for="Team1" id="Result1" class="Result">0</label>
-        <label for="Team2" id="Result2" class="Result">0</label><br>
+  <div class="container">
+    <input type="text" placeholder="Enter Username" name="username" class="username" required>
+    <input type="password" placeholder="Enter Password" name="password" class="password" required>
+    <span class="diagonal-right"></span>
+    <input type="password" placeholder="Confirm Password" name="confirm_password" class="confirm_password" required>
+    <input type="text" placeholder="Enter Email ID" name="email" class="email" required>
+    <span class="diagonal-left"></span>
+    <span class="diagonal-left-1"></span>
+    <button class="login" type="submit" name="login">Login</button>
+    <button class="signup" type="submit" name="signup">Signup</button>
 
-        <label for="Team1" id = "gd1" class = "gd">0</label>   
-        <label for="Team2" id = "gd2" class = "gd">0</label><br>   
-      </div>
-    </div>
-
+  </div>
+  </form>
 
 </body>
 </html>
